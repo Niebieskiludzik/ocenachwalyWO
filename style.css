@@ -1,17 +1,31 @@
 body {
   margin: 0;
-  background: #0f0f0f;
   font-family: Arial;
+  background: #0b0f1a; /* głęboki granat */
   color: white;
-  height: 100vh;
 }
 
-.home {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+/* GLOBAL APP CONTAINER */
+.app {
+  padding: 10px;
 }
 
+/* TEKST */
+h1, h2 {
+  color: white;
+  margin: 10px 0;
+}
+
+/* 🔵 GOLD BUTTON / CARD BASE */
+.btn, .card, .rank-item {
+  background: linear-gradient(145deg, #121a2a, #0d1322);
+  border: 1px solid rgba(80, 140, 255, 0.15);
+  border-radius: 14px;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+/* HOME BUTTONS */
 .big-btn {
   flex: 1;
   display: flex;
@@ -23,40 +37,50 @@ body {
   color: white;
 }
 
+/* TOP = BLUE GRADIENT */
 .top {
-  background: #1f1f1f;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
 }
 
+/* BOTTOM = GOLD GRADIENT */
 .bottom {
-  background: #2a2a2a;
+  background: linear-gradient(135deg, #b8860b, #ffd700);
 }
 
+/* RANKING ITEMS */
 .rank-item {
-  background: #1f1f1f;
-  margin: 8px;
-  padding: 16px;
-  border-radius: 12px;
-  font-size: 28px; /* 🔥 3x większe */
+  margin: 10px;
+  padding: 18px;
+  font-size: 30px;
   text-align: center;
+  border-left: 4px solid #4da3ff;
 }
 
+/* GOLD ACCENT FOR TOP PLAYERS */
+.rank-item:nth-child(1) {
+  border-left: 4px solid gold;
+}
+
+/* TITLES */
+h1 {
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+/* SWIPE CARDS */
+.card {
+  min-width: 80%;
+  flex: 0 0 auto;
+  padding: 20px;
+  font-size: 18px;
+}
+
+/* SWIPE CONTAINER */
 .swipe {
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   gap: 10px;
   padding: 10px;
-}
-
-.card {
-  min-width: 80%;
-  flex: 0 0 auto;
-  scroll-snap-align: center;
-
-  background: #1f1f1f;
-  padding: 20px;
-  border-radius: 16px;
-
-  font-size: 20px;
-  text-align: center;
 }
