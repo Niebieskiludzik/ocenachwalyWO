@@ -15,17 +15,13 @@ async function loadVotes() {
 
   const el = document.getElementById("votes");
 
-  el.innerHTML = `
-    <div class="swipe">
-      ${data.map(v => `
-        <div class="card">
-          🧑 ${v.voter_name}<br>
-          ⚽ ${v.players?.name || "—"}<br>
-          ⭐ ${v.score}
-        </div>
-      `).join("")}
+  el.innerHTML = data.map(v => `
+    <div class="card">
+      🧑 ${v.voter_name}<br>
+      ⚽ ${v.players?.name || "—"}<br>
+      ⭐ ${v.score}
     </div>
-  `;
+  `).join("");
 }
 
 loadVotes();
