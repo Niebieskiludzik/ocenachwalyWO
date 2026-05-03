@@ -17,6 +17,10 @@ async function loadMVP() {
   `).join("");
 }
 
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("./sw.js");
+}
+
 // ⚽ OBECNOŚĆ
 async function loadAttendance() {
   const { data } = await supabase
