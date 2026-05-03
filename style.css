@@ -39,3 +39,24 @@ body {
   font-size: 28px; /* 🔥 3x większe */
   text-align: center;
 }
+
+.swipe {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 10px;
+  padding: 10px;
+}
+
+.card {
+  min-width: 80%;
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+
+  background: #1f1f1f;
+  padding: 20px;
+  border-radius: 16px;
+
+  font-size: 20px;
+  text-align: center;
+}
