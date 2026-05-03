@@ -30,3 +30,12 @@ body {
 .bottom {
   background: #2a2a2a;
 }
+
+.rank-item {
+  background: #1f1f1f;
+  margin: 8px;
+  padding: 16px;
+  border-radius: 12px;
+  font-size: 28px; /* 🔥 3x większe */
+  text-align: center;
+}
