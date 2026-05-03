@@ -37,14 +37,13 @@ h1, h2 {
   color: white;
 }
 
-/* TOP = BLUE GRADIENT */
+/* LOW BLUE GRADIENT i TOP GOLDEN GRADIENT */
 .top {
-  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  background: linear-gradient(135deg, #6b4f1d, #b8860b, #ffd700);
 }
 
-/* BOTTOM = GOLD GRADIENT */
 .bottom {
-  background: linear-gradient(135deg, #b8860b, #ffd700);
+  background: linear-gradient(145deg, #121a2a, #0d1322);
 }
 
 /* RANKING ITEMS */
