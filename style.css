@@ -5,6 +5,10 @@ body {
   color: white;
 }
 
+html, body {
+  height: 100%;
+}
+
 /* GLOBAL APP CONTAINER */
 .app {
   padding: 10px;
@@ -31,10 +35,12 @@ h1, h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 26px;
+
+  font-size: 30px;
   font-weight: bold;
   text-decoration: none;
   color: white;
+  text-align: center;
 }
 
 /* LOW BLUE GRADIENT i TOP GOLDEN GRADIENT */
@@ -96,3 +102,28 @@ h1 {
   margin: 10px 0;
 }
 
+.home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  margin: 10px;
+  padding: 18px;
+  border-radius: 14px;
+
+  background: linear-gradient(145deg, #121a2a, #0d1322);
+  border-left: 4px solid #4da3ff;
+
+  font-size: 28px; /* 🔥 3x większe */
+  text-align: center; /* 🎯 center */
+  line-height: 1.4;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
