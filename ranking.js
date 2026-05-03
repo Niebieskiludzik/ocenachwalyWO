@@ -1,0 +1,23 @@
+import { supabase } from "./supabase.js";
+
+async function loadRanking() {
+  const { data } = await supabase
+    .from("players")
+    .select("name, rating, manual_points");
+
+  const sorted = data
+    .map(p => ({
+      name: p.name,
+      points: (p.rating || 0) + (p.manual_points || 0)
+    }))
+    .sort((a, b) => b.points - a.points);
+
+  document.getElementById("ranking").innerHTML =
+    sorted.map((p, i) => `
+      <div class="btn">
+        #${i + 1} ${p.name} — ⭐ ${p.points.toFixed(1)}
+      </div>
+    `).join("");
+}
+
+loadRanking();
