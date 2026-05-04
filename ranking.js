@@ -15,8 +15,8 @@ async function loadRanking() {
   document.getElementById("ranking").innerHTML =
     sorted.map((p, i) => `
       <div class="rank-item">
-        #${i + 1} ${p.name}<br>
-        ⭐ ${p.points.toFixed(1)}
+        ${i + 1}. ${p.name}<br>
+        ${p.points.toFixed(1)} punktów
       </div>
     `).join("");
 }
