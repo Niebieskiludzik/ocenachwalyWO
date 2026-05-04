@@ -45,11 +45,11 @@ h1, h2 {
 
 /* LOW BLUE GRADIENT i TOP GOLDEN GRADIENT */
 .top {
-  background: linear-gradient(135deg, #6b4f1d, #b8860b, #ffd700);
+  background: linear-gradient(90deg,rgba(176, 122, 42, 1) 0%, rgba(110, 106, 101, 1) 49%, rgba(204, 137, 20, 1) 100%);
 }
 
 .bottom {
-  background: linear-gradient(145deg, #121a2a, #0d1322);
+  background: linear-gradient(90deg,rgba(51, 80, 122, 1) 0%, rgba(110, 106, 101, 1) 49%, rgba(15, 56, 102, 1) 100%);
 }
 
 /* RANKING ITEMS */
@@ -64,6 +64,14 @@ h1, h2 {
 /* GOLD ACCENT FOR TOP PLAYERS */
 .rank-item:nth-child(1) {
   border-left: 4px solid gold;
+}
+
+.rank-item:nth-child(2) {
+  border-left: 4px solid silver;
+}
+
+.rank-item:nth-child(3) {
+  border-left: 4px solid brown;
 }
 
 /* TITLES */
